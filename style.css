@@ -1,0 +1,74 @@
+:root{
+  --brand-green: #2f5d4e;
+  --muted-bg: #fdf9f4;
+  --panel-bg: #fff;
+  --accent-bg: #e8f0ea;
+  --muted-text: #555;
+}
+
+html,body{height:100%}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--muted-bg);
+  color: #1f1f1f;
+  line-height: 1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a { color: var(--brand-green); text-decoration: none; }
+a:focus{outline:2px solid color-mix(in srgb, var(--brand-green) 30%, white)}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: var(--accent-bg);
+}
+
+.logo { font-weight: 700; font-size: 1.5rem; color: var(--brand-green); }
+
+nav a { margin-left: 20px; font-weight: 500; }
+nav a[aria-current="page"]{ text-decoration: underline; }
+
+.hero { text-align: center; padding: 60px 20px; background: #f2f5f0; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 20px; color: var(--brand-green); }
+.hero p { font-size: 1.2rem; color: var(--muted-text); max-width:900px; margin:0 auto; }
+
+.featured { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 30px; padding: 40px; }
+
+.featured article { background: var(--panel-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+.ad-placeholder { background: #e1e8e0; text-align: center; padding: 20px; margin-top: 15px; border-radius: 8px; color: var(--muted-text); font-style: italic; }
+
+footer { text-align: center; padding: 20px; background: var(--accent-bg); font-size: 0.9rem; color: var(--muted-text); }
+
+input, textarea, button {
+  width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; box-sizing: border-box;
+}
+
+button {
+  background: var(--brand-green); color: #fff; border: none; cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover, button:focus { background: #24614a; outline:none }
+
+.sr-only{
+  position:absolute!important;
+  height:1px;width:1px;
+  overflow:hidden;
+  clip:rect(1px,1px,1px,1px);
+  white-space:nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; }
+  nav a { margin: 10px 0 0 0; }
+  .hero h1 { font-size: 1.8rem; }
+  .featured { padding: 20px; gap: 16px; }
+}

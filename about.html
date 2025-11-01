@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Green & Grand</title>
+  <meta name="description" content="Learn about Green & Grand — your guide to sustainable luxury living.">
+  <meta name="theme-color" content="#e8f0ea">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Green &amp; Grand</div>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about" aria-labelledby="about-heading">
+      <h1 id="about-heading">Our Mission</h1>
+      <p>At Green &amp; Grand, we celebrate sustainable luxury living. Our goal is to inspire conscious choices without compromising on elegance or style.</p>
+      <p>From eco-conscious travel to ethical fashion and refined home design, we curate the best insights for a sophisticated, sustainable lifestyle.</p>
+      <div class="ad-placeholder" role="region" aria-label="Advertisement">[Ad space: paste AdSense code here]</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> Green &amp; Grand</p>
+    <p class="small">This site contains ads. We may earn a commission at no extra cost to you.</p>
+  </footer>
+
+  <script defer>
+    (function () {
+      var el = document.getElementById('yr');
+      if (el) el.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
