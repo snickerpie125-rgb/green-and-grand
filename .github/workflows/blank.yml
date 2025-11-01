@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green & Grand — Sustainable Luxury Lifestyle</title>
+  <meta name="description" content="Green & Grand: Curated insights, products, and trends in sustainable luxury living. Discover eco-conscious elegance.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Green & Grand</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Elevating Sustainable Luxury</h1>
+      <p>Discover eco-conscious elegance — curated insights, sustainable products, and refined lifestyle tips.</p>
+    </section>
+
+    <section class="featured">
+      <article>
+        <h2>Eco-Luxury Travel Essentials</h2>
+        <p>Travel sustainably without compromising on style or comfort.</p>
+        <!-- Ad placeholder -->
+        <div class="ad-placeholder">[Ad space: paste AdSense code here]</div>
+      </article>
+
+      <article>
+        <h2>Conscious Home Design</h2>
+        <p>Incorporate luxury and sustainability into your living spaces.</p>
+        <div class="ad-placeholder">[Ad space: paste AdSense code here]</div>
+      </article>
+
+      <article>
+        <h2>Ethical Fashion Highlights</h2>
+        <p>Discover premium brands with eco-conscious practices.</p>
+        <div class="ad-placeholder">[Ad space: paste AdSense code here]</div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> Green & Grand — Sustainable Luxury Lifestyle</p>
+    <p class="small">This site contains ads. We may earn a commission at no extra cost to you.</p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Green & Grand</title>
+  <meta name="description" content="Learn about Green & Grand — your guide to sustainable luxury living.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Green & Grand</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>Our Mission</h1>
+      <p>At Green & Grand, we celebrate sustainable luxury living. Our goal is to inspire conscious choices without compromising on elegance or style.</p>
+      <p>From eco-conscious travel to ethical fashion and refined home design, we curate the best insights for a sophisticated, sustainable lifestyle.</p>
+      <div class="ad-placeholder">[Ad space: paste AdSense code here]</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> Green & Grand</p>
+    <p class="small">This site contains ads. We may earn a commission at no extra cost to you.</p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Green & Grand</title>
+  <meta name="description" content="Contact Green & Grand for collaborations, partnerships, or inquiries.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Green & Grand</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <p>For brand collaborations, sponsorships, or inquiries, please use the form below:</p>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="ad-placeholder">[Ad space: paste AdSense code here]</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="yr"></span> Green & Grand</p>
+    <p class="small">This site contains ads. We may earn a commission at no extra cost to you.</p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+/* Natural Organic - Green & Grand */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdf9f4;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+a { color: #2f5d4e; text-decoration: none; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #e8f0ea;
+}
+
+.logo { font-weight: 700; font-size: 1.5rem; color: #2f5d4e; }
+
+nav a { margin-left: 20px; font-weight: 500; }
+
+.hero { text-align: center; padding: 60px 20px; background: #f2f5f0; }
+.hero h1 { font-size: 2.5rem; margin-bottom: 20px; color: #2f5d4e; }
+.hero p { font-size: 1.2rem; color: #555; }
+
+.featured { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 30px; padding: 40px; }
+
+.featured article { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+.ad-placeholder { background: #e1e8e0; text-align: center; padding: 20px; margin-top: 15px; border-radius: 8px; color: #555; font-style: italic; }
+
+footer { text-align: center; padding: 20px; background: #e8f0ea; font-size: 0.9rem; color: #555; }
+
+input, textarea, button {
+  width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;
+}
+
+button {
+  background: #2f5d4e; color: #fff; border: none; cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover { background: #24614a; }
+
+@media (max-width: 600px) {
+  header { flex-direction: column; align-items: flex-start; }
+  nav a { margin: 10px 0 0 0; }
+}
